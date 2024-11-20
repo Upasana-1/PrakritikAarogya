@@ -1,0 +1,107 @@
+/* Static Background Styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('your-natural-background-image.jpg'); /* Replace with your natural background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background static */
+    background-color: #e1f7d5; /* Soft light green background for natural feel */
+    font-family: 'Arial', sans-serif; /* Clean and easy-to-read font */
+}
+
+/* Page Wrapper to ensure full height */
+.prakritik-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full width of the viewport */
+    overflow: hidden; /* Prevents content from overflowing */
+    margin-top: 50px;
+}
+
+/* Content Box Styling */
+.content-box {
+    background: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+    border: 3px solid #6dbd5f; /* Green border for natural vibe */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    transform: perspective(1000px) rotateY(10deg); /* 3D effect on container */
+    transition: all 0.3s ease-in-out;
+    max-height: 80vh; /* Limit the height of the content box */
+    overflow-y: scroll; /* Enable scrolling inside the content box */
+}
+
+/* Main Heading Styling */
+.main-heading {
+    font-family: 'Georgia', serif; /* Elegant and organic font style */
+    font-size: 3rem;
+    color: #4CAF50; /* Fresh green color for the heading */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+    letter-spacing: 2px;
+}
+
+/* Description Text Styling */
+/* Description Text Styling */
+.description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #5a3d29; /* Organic brown color */
+    line-height: 1.8;
+    padding-right: 20px; /* To ensure text doesn't touch the edges */
+    word-wrap: break-word; /* Ensure text wraps within the box */
+    margin-top: 10px;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+/* Paragraph Styling */
+.description p {
+    font-family: 'Georgia', serif; /* Adding a more natural and organic font for paragraphs */
+    font-size: 1.2rem;
+    color: #5a3d29; /* Organic brown color for text */
+    margin-bottom: 15px; /* Add space between paragraphs */
+    line-height: 1.8;
+}
+
+/* Highlighting specific words in bold with earthy tones */
+.description p span {
+    font-weight: bold;
+    color: #8e5e3e; /* A darker brown color to highlight important words */
+}
+
+
+
+/* Hide the scrollbar */
+.content-box::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+/* Hover Effect on Content Box */
+.content-box:hover {
+    transform: scale(1.05) perspective(1000px) rotateY(0deg); /* Scale and remove 3D on hover */
+    transition: all 0.3s ease-in-out;
+    border-color: #52b788; /* Lighter green for hover effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .content-box {
+        padding: 20px;
+    }
+}

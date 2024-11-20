@@ -1,0 +1,88 @@
+/* About page styling */
+
+.about-container {
+ /* max-width:max-content; */
+margin: 50px auto;
+padding: 30px;
+font-family: 'Arial', sans-serif;
+background-color: linear-gradient(135deg, #f4f4f4, #e2f5e2); /* Subtle gradient with soft greens */
+border-radius: 12px;
+color: #2e7d32;
+  background: linear-gradient(135deg, #A9D0B6, #FFEB99); /* Soft gradient background */
+  padding: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+
+.about-heading {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8B4513;  /* Highlight the brand name */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.motto {
+  font-style: italic;
+  color: #8B4513; /* Highlight the motto in a traditional brown */
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333333;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+p span {
+  font-weight: bold;
+  color: #2E8B57; /* Call to action color */
+}
+
+.cta-button {
+  background-color:#2E8B57; 
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8B4513; /* Darken on hover */
+}
+
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2.5rem;
+  }
+
+  .highlight {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}

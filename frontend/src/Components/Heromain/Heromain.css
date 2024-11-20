@@ -1,0 +1,78 @@
+/* Hero Section Styling */
+.hero-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 80vh; /* Adjust based on your design, typically 80% of the viewport height */
+  background-image: url('../Assets/Himal.jpg'); /* Assuming the image is in this location */
+  background-size: cover; /* Ensures the image covers the full width/height of the container */
+  background-position: center center; /* Centers the image in the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0; /* Ensure no padding around the container */
+  margin: 0;  /* Remove any margin */
+  animation: slideUp 1.5s ease-in-out;
+}
+
+
+.main-text {
+  font-family: 'Playfair Display', serif; /* Elegant serif font representing nature */
+  font-size: 5rem;                     /* Large font for the heading */
+  font-weight: bold;
+  color:#2e7d32;                      /* Natural green representing health and nature */
+  text-transform: uppercase;           /* Makes it more impactful */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow for readability */
+  letter-spacing: 4px; 
+  margin-top: 50px;               
+ 
+}
+
+.motto {
+  font-family: 'Roboto', sans-serif;  /* Clean sans-serif font for the motto */
+  font-size: 5rem;                  /* Slightly smaller than h1 */
+  font-weight: bold;
+  color: #8B4513;  
+  text-transform: uppercase;                     /* Earthy brown color for the motto representing soil */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  text-transform: none;
+  letter-spacing: 1px;                /* Space between letters for a clear, defined look */
+  margin-top: 15px;
+}
+
+/* Optional: Adding extra styling for responsive behavior */
+@media (max-width: 768px) {
+  .main-text {
+    font-size: 3rem; /* Smaller text on mobile */
+  }
+
+  .motto {
+    font-size: 1.8rem; /* Smaller text on mobile */
+  }
+}
+
+/* Navbar Styling */
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: #fff; /* Set a background color for navbar */
+  padding: 1rem 2rem; /* Ensure proper padding for a larger navbar */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+/* Make sure links and navbar items are correctly spaced and sized */
+.navbar a {
+ 
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  color:  #8B4513;
+}
+
+.navbar .navbar-brand {
+  font-size: 2.5rem; /* Make the brand name larger */
+  font-weight: bold;
+  color: #4E9F3D; /* Green color representing health and nature */
+}
+

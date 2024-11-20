@@ -1,0 +1,171 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;  /* Apply Poppins font */
+}
+
+/* Logo Section */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.nav-logo img {
+    width: 80px;
+    height: auto;
+}
+.nav-logo p {
+    color: green;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar Links */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    font-size: 18px;  /* Slightly larger font size */
+    font-weight: 600;  /* Use a stronger weight for better visibility */
+    text-transform: uppercase;
+    color: #333;
+}
+.nav-menu li {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.3s ease, transform 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-menu li:hover {
+    color: #087f23;  /* Green color on hover */
+    transform: translateY(-2px);
+}
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: #087f23;
+    border-radius: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.3s ease;
+}
+.nav-menu li:hover::after {
+    transform: translateX(-50%) scale(1.2);
+}
+
+/* Login & Cart Section */
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.nav-login-cart button {
+    padding: 10px 20px;
+    border: 2px solid #087f23;
+    border-radius: 30px;
+    background: transparent;
+    color: #087f23;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Move active button style to the top part */
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+/* Hover effects for button */
+.nav-login-cart button:hover {
+    background: #087f23;
+    color: #ffffff;
+}
+
+/* Cart Icon */
+.nav-card-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff4500;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+}
+
+/* Hover & Active States */
+.navbar:hover {
+    background: #f3f3f3;
+}
+.nav-menu li:hover {
+    color: #087f23;
+}
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-login-cart button:active{
+    background: #f3f3f3;
+    }
+    .nav-card-count{
+        display:flex;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        align-items: center;
+        margin-top: -35px;
+        margin-left: -55px;
+        border-radius: 11px;
+        font-size: 14px;
+        background: red;
+       color: white;
+    }

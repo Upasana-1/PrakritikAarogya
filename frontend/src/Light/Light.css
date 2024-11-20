@@ -1,0 +1,41 @@
+/* Default Theme (Light) */
+body {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg: #e0e0e0;
+    --button-text: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --button-bg: #333333;
+    --button-text: #ffffff;
+  }
+  
+  .App {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .theme-toggle {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .theme-toggle:hover {
+    opacity: 0.9;
+  }
+  

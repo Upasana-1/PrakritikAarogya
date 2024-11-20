@@ -1,0 +1,14 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 100%);
+  padding-top: 200px;
+
+}
+.hero-left{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}

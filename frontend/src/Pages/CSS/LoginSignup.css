@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #f4f4ec, #e9f5e9);
+  }
+  
+  /* LoginSignup Container */
+  .loginsignup {
+    display: flex;
+    justify-content: center;
+    margin-left:500px;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/images/organic-pattern.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Inner Container */
+  .loginsignup-container {
+    background: #ffffff;
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid #a8d5ba;
+  }
+  
+  /* Title */
+  .loginsignup-title {
+    font-size: 2rem;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .loginsignup-fields input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #c7e1c0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9fff9;
+  }
+  
+  /* Input Focus Effect */
+  .loginsignup-fields input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Button */
+  .loginsignup-button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: poi
+  }  
