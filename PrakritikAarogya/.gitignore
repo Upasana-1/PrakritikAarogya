@@ -1,0 +1,25 @@
+*.pyc
+__pycache__/
+
+.venv
+venv
+env
+.env
+
+*.sqlite3
+node_modules
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+mediafiles/
+
+# Tailwind CSS build artifacts
+node_modules/
+static/dist/
+# static/src/*.css
+
+.vscode/
+.idea/
