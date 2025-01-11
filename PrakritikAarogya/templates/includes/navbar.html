@@ -4,17 +4,20 @@
     <div class="flex justify-between items-center">
       {% comment %}Logo{% endcomment %}
       <div class="flex items-center">
-        <a href="#" class="text-xl md:text-2xl font-bold flex items-center gap-2 h-16">
-          <img src="{% static 'images/logomain.png' %}" class="h-16" alt="Prakritik Aarogya Logo" />
-          <span class="text-green-700 uppercase hidden sm:block">Prakritik Aarogya</span>
+        <a href="#" class="text-lg sm:text-2xl md:text-2xl font-bold flex items-center gap-2 h-16">
+          <img src="{% static 'images/web/logomain.png' %}" class="h-16" alt="Prakritik Aarogya Logo" />
+          <span class="text-green-700 uppercase">Prakritik Aarogya</span>
         </a>
       </div>
 
       {% comment %}Desktop Menu{% endcomment %}
-      <div id="desktop-menu" class="hidden md:flex space-x-4 gap-4 items-center">
-        <a href="3" class="relative text-gray-700 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-500 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:contents[hello] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full">Home</a>
-        <button type="button" class="text-white bg-green-700 px-4 py-2 rounded-md border-2 border-green-700 hover:text-green-700 hover:bg-white cursor-pointer">Login</button>
-        <button type="button" class="relative text-gray-700 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-500 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full">Logout</button>
+      <div id="desktop-menu" class="hidden md:flex gap-4 items-center">
+        <a href="{% url 'home' %}">{% include 'components/navbar_link.html' with value='Home' %}</a>
+        <a href="{% url 'products' %}">{% include 'components/navbar_link.html' with value='Products' %}</a>
+        <a href="{% url 'about' %}">{% include 'components/navbar_link.html' with value='About' %}</a>
+        {% include 'components/secondary_button.html' with value='Login' %}
+        {% include 'components/primary_button.html' with value='Register' %}
+        <button type="button" class="relative text-gray-700 uppercase font-medium dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-500 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full">Logout</button>
       </div>
 
       {% comment %}Mobile Menu Button{% endcomment %}
@@ -32,7 +35,13 @@
   {% comment %}Mobile Menu{% endcomment %}
   <div id="mobile-menu" class="hidden md:hidden md:bottom-0">
     <div class="space-y-1 px-2 pb-3 sm:px-3">
-      <a href="3" class="block text-gray-700 hover:bg-gray-200 hover:text-orange-500 dark:hover:text-orange-500 dark:text-gray-400 dark:hover:bg-gray-900 px-3 py-2 rounded-md text-base font-medium">Home</a>
+      <a href="{% url 'home' %}">{% include 'components/navbar_link_mobile.html' with value='Home' %}</a>
+      <a href="{% url 'products' %}">{% include 'components/navbar_link_mobile.html' with value='Products' %}</a>
+      <a href="{% url 'home' %}">{% include 'components/navbar_link_mobile.html' with value='About' %}</a>
+      <div>
+        {% include 'components/secondary_button.html' with value='Login' %}
+        {% include 'components/primary_button.html' with value='Register' %}
+      </div>
       <div>
         <button type="button" class="block w-full text-start text-gray-700 hover:bg-gray-100 hover:text-orange-500 dark:hover:text-orange-500 dark:text-gray-400 dark:hover:bg-gray-900 px-3 py-2 rounded-md text-base font-medium">Logout</button>
       </div>
